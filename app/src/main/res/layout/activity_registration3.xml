@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activities.Registration2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/attendance14"
+            android:transitionName="transition_logo_image" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/layout_three"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="120dp"
+            android:src="@mipmap/registration_3rd"
+            app:civ_border_width="2dp"
+            android:transitionName="transition_layout_number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Teacher Details"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:transitionName="transition_title_text"
+            app:fontFamily="@font/aclonica" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/Browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:text="Browse"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/FinalRegistration"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button"
+        android:text="Registration"
+        android:textColor="@android:color/white"
+        android:transitionName="transition_next_btn" />
+</LinearLayout>

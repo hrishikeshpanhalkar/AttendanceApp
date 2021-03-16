@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_course"
+        android:title="Course"
+        android:icon="@drawable/ic_course"
+        app:cnb_backgroundColor="#5C673AB7"/>
+    <item
+        android:id="@+id/bottom_nav_teacher"
+        android:title="Teacher"
+        android:icon="@drawable/ic_teacher"
+        app:cnb_backgroundColor="#1E00BCD4"/>
+    <item
+        android:id="@+id/bottom_nav_student"
+        android:title="Student"
+        android:icon="@drawable/ic_student"
+        app:cnb_backgroundColor="#7CFFC107"/>
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".Activities.Subject_Add_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/r1header">
+
+            <ImageView
+                android:id="@+id/imageview_subject"
+                android:padding="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/attendance14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Subject Details"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:paddingLeft="20dp"
+                android:layout_toRightOf="@+id/imageview_subject"
+                app:fontFamily="@font/aclonica" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/r1header"
+            android:layout_width="220dp"
+            android:layout_height="520dp"
+            android:background="@drawable/shape_right_panel" />
+
+        <RelativeLayout
+            android:id="@+id/detailspanel"
+            android:transitionName="coursefragment"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/subject_add_panel"
+            android:layout_below="@+id/r1header"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="70dp">
+
+            <LinearLayout
+                android:id="@+id/subcode_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/subcode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject Code"
+                    app:boxStrokeColor="#000000"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#000000"
+                    app:hintTextColor="#000000"
+                    app:startIconDrawable="@drawable/ic_edit_fullname"
+                    app:startIconTint="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subname_linearlayout"
+                android:layout_below="@id/subcode_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/subname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject Name"
+                    app:boxStrokeColor="#000000"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#000000"
+                    app:hintTextColor="#000000"
+                    app:startIconDrawable="@drawable/ic_edit_fullname"
+                    app:startIconTint="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subjectCourse"
+                android:layout_below="@+id/subname_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_course_subject"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Name"
+                    app:endIconMode="dropdown_menu"
+                    app:endIconTint="#000000"
+                    app:hintTextColor="#000000"
+                    app:startIconDrawable="@drawable/ic_edit_fullname"
+                    app:startIconTint="#000000">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/course_subject"
+                        android:imeOptions="actionDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:editable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/subjectCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_sem_subject"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Semister Name"
+                    app:endIconMode="dropdown_menu"
+                    app:endIconTint="#000000"
+                    app:hintTextColor="#000000"
+                    app:startIconDrawable="@drawable/ic_edit_fullname"
+                    app:startIconTint="#000000">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/subjectSemester"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:imeOptions="actionDone"
+                        android:editable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Add Data"
+            android:layout_marginTop="-50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detailspanel"
+            android:id="@+id/subadd"
+            android:background="@drawable/round_background"
+            android:backgroundTint="#03A9F4"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

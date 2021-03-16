@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:transitionName="login_User1"
+    tools:context=".Activities.ShowAttendanceActivity">
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/attendance14" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Attendance"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course">
+
+            <AutoCompleteTextView
+                android:id="@+id/show_attendance_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semester">
+
+            <AutoCompleteTextView
+                android:id="@+id/show_attendance_semester"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject">
+
+            <AutoCompleteTextView
+                android:id="@+id/show_attendance_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:padding="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/attendancedate"
+            android:hint="Date"
+            android:drawableRight="@drawable/ic_arrow"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/file_create"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:background="@drawable/round_background"
+        android:backgroundTint="#000000"
+        android:textColor="@color/white"
+        android:text="Create File" />
+</LinearLayout>

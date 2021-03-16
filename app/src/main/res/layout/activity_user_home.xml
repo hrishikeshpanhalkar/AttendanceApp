@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionName="login_User"
+    tools:context=".Activities.UserHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_header"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/profile_course"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/user_home_back"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_arrow_back" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_account"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:src="@drawable/ic_account"
+                android:transitionName="transition_profile_picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="HOME"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_header"
+        android:layout_marginBottom="55dp" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_menu_user"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cnb_menuResource="@menu/bottom_nav_menu_user"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_corners"
+        app:cnb_unselectedColor="@color/blackTextColor"
+        app:cnb_radius="8dp"
+        app:cnb_orientationMode="horizontal"
+        android:elevation="8dp"/>
+
+</RelativeLayout>

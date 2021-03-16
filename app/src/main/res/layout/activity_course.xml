@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistrationActivity"
+    android:orientation="vertical"
+    android:transitionName="coursefragment"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="logoimage"
+        android:src="@drawable/attendance14" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course Details"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/coursename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Seat"
+            app:hintTextColor="#000000"
+            app:boxStrokeColor="#000000"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semister"
+            app:hintTextColor="#000000"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="#000000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseadd"
+        android:background="@drawable/round_button"
+        android:text="Add Course"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/demo123"
+        android:background="@drawable/round_button"
+        android:text="Demo"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

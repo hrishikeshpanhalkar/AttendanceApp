@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="admin">ADMIN LOGIN</string>
+    <string name="abc">No of attempts remaining: 5</string>
+    <string name="second">This is second activity</string>
+    <string name="btn">Registration</string>
+    <string name="third">Registration Form</string>
+    <string name="name">Name</string>
+    <string name="surname">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="Date">Birthdate</string>
+    <string name="show">Show ALL</string>
+    <string name="map">Show Map</string>
+    <string name="user">USER LOGIN</string>
+
+    <string name="first_slide_title">Manage Teacher and Student Information</string>
+    <string name="second_slide_title">Course Allocation System</string>
+    <string name="third_slide_title">Take live Attendance</string>
+
+    <string name="first_slide_disc">Manage teacher and student information course allocation System take live Attendance</string>
+    <string name="second_slide_disc">Manage teacher and student information course allocation System take live Attendance</string>
+    <string name="third_slide_disc">Manage teacher and student information course allocation System take live Attendance</string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+    <string-array name="Sem">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="attendance_tracking_system">Attendance Tracking System</string>
+    <string name="subtitle_mainScreen">Get An Education. Stay In School!</string>
+
+    <string-array name="title">
+        <item>Add Course</item>
+        <item>Update Course</item>
+        <item>Delete Course</item>
+        <item>Add Teacher</item>
+        <item>Update Teacher</item>
+        <item>Delete Teacher</item>
+        <item>Add Student</item>
+        <item>Update Student</item>
+        <item>Delete Student</item>
+    </string-array>
+</resources>

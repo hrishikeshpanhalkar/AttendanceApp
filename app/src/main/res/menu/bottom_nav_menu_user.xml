@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_student"
+        android:title="Student"
+        android:icon="@drawable/ic_student"
+        app:cnb_backgroundColor="#7CFFC107"/>
+
+    <item
+        android:id="@+id/bottom_nav_attendance"
+        android:title="Attendance"
+        android:icon="@drawable/ic_account"
+        app:cnb_backgroundColor="#4AF44336"/>
+</menu>
